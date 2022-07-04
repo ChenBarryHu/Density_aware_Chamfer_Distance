@@ -8,9 +8,9 @@ import os
 class MVP_CP(data.Dataset):
     def __init__(self, prefix="train"):
         if prefix=="train":
-            self.file_path = '../data/MVP/MVP_Train_CP.h5'
+            self.file_path = './data/MVP/MVP_Train_CP.h5'
         elif prefix=="val":
-            self.file_path = '../data/MVP/MVP_Test_CP.h5'
+            self.file_path = './data/MVP/MVP_Test_CP.h5'
         # the hidden test set below is only used for workshop competition
         # elif prefix=="test":
         #     self.file_path = './data/MVP_ExtraTest_Shuffled_CP.h5'
